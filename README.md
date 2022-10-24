@@ -5,13 +5,15 @@ Currently only supports editing the _lc columns. Not the _sc columns. Not sure w
 Setup instructions
 ------------------
 1. Put pdfs in a directory in /path/to/image/dir
-2. Put the csv named WG1-2.csv in /path/to/csv
+2. Put the csv named WG1-2.csv in /path/to/csv (Note: this will be edited)
 
-You'll need to have the PDF's locally and convert them to png first. The following worked on Ubuntu:
-cd /path/to/image/dir
-sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.off
-ls *.pdf | xargs -I{} basename {} .pdf | xargs -I{} -t convert -density 100 -flatten {}.pdf {}.png
-sudo mv /etc/ImageMagick-6/policy.xml.off /etc/ImageMagick-6/policy.xml
+You'll need to have the PDF's locally and convert them to png first. 
+
+The following worked on Ubuntu:
+1. cd /path/to/image/dir
+2. sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.off
+3. ls *.pdf | xargs -I{} basename {} .pdf | xargs -I{} -t convert -density 100 -flatten {}.pdf {}.png
+4. sudo mv /etc/ImageMagick-6/policy.xml.off /etc/ImageMagick-6/policy.xml
 
 (The policy.xml lines disable and reenable the ImageMagick security policies)
 
