@@ -17,7 +17,7 @@ The following worked on Ubuntu:
 
 (The policy.xml lines disable and reenable the ImageMagick security policies)
 
-The csv file is ; separated cause apparently crazy people made it. Don't worry about that. It'll be converted to , after you use inspectr first time.
+The WG1-2.csv file is semi-colon separated cause apparently crazy people made it. Don't worry about that. It'll be converted to comma after you use inspectr first time.
 
 Instructions
 ------------
