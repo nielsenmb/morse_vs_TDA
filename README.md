@@ -36,14 +36,16 @@ Usage instructions
 8. Optionally write in a note about weirdness in the blank text field.
 9. Press the Next (save) button.
 
-Progress is stored every time you press the Next button, so you can close the window and reopen it again. 
+Notes
+-----
+The multi variability flag is automatically set if a secondary variability source is entered, so don't worry about that
 
-Note: Having the csv file open in, for example, a text editor at the same time as using inspectr may mess things up.
+Having the csv file open in, for example, a text editor at the same time as using inspectr may mess things up.
+
+Progress is stored every time you press the Next button, so you can close the window and reopen it again. 
 
 If you make a mistake well...good luck. You'll need to edit the csv manually. 
 
-Optional instructions
----------------------
 You can use the --shuffle option when starting inspectr to shuffle the rows in the csv file. More randomness is fun. 
 
 At the moment the default is to look at the long cadence lightcurves. You can run inspectr with the --cadence sc argument to just view the short cadence lightcurve files, but you can't swap between the modes on-the-fly. 
