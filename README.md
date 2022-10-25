@@ -4,14 +4,13 @@ Running inspectr.py will launch a UI that displays the images that were distribu
 
 You can optionally add a note in case of lightcurve weirdness. 
 
+You'll need to have the PDF's locally and convert them to png first, since I don't know how to make PyQT show pdf files. See below for what worked with Ubuntu.
 
 Setup instructions
 ------------------
 1. Clone/download this repo and put it in a sensible place.
 2. Download and put pdfs in a directory in /path/to/image/dir
 3. Download and put the csv named WGx-x.csv in /path/to/csv (Note: this will be edited when you start classifying, so make a backup)
-
-You'll need to have the PDF's locally and convert them to png first, since I don't know how to make PyQT show pdf files. Converting to png is probably system dependent but the following worked on Ubuntu:
 4. cd /path/to/image/dir
 5. sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.off
 6. ls *.pdf | xargs -I{} basename {} .pdf | xargs -I{} -t convert -density 100 -flatten {}.pdf {}.png
