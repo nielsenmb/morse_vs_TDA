@@ -1,3 +1,5 @@
+# Inspectr
+
 A simple UI for inspecting the pdfs provided by the TDA team. 
 
 Running inspectr.py will launch a UI that displays the images that were distributed by the TDA team, one by one. You then click what you think the primary variability source is, and then any number of secondary sources. 
