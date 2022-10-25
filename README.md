@@ -44,4 +44,4 @@ Optional instructions
 ---------------------
 You can use the --shuffle option when starting inspectr to shuffle the rows in the csv file. More randomness is fun. 
 
-At the moment the default is to look at the long cadence lightcurves. You can run inspectr with the `--cadence sc' argument to just view the short cadence lightcurve files, but you can't swap between the modes on-the-fly. 
+At the moment the default is to look at the long cadence lightcurves. You can run inspectr with the --cadence sc argument to just view the short cadence lightcurve files, but you can't swap between the modes on-the-fly. 
