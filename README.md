@@ -26,7 +26,7 @@ Usage instructions
 ------------------
 1. Read the instructions provided by the TDA people.
 2. cd **/directory/where/inspectr/is/located**
-3. python inspectr.py **/path/to/csv/WGx-x.csv** **/path/to/image/dir/wgxx/wgxx** --initials **abc** (replace x with appropriate WG name and abc with your initials.)
+3. python inspectr.py **/path/to/csv/WGx-x.csv** **/path/to/image/dir/wgxx/wgxx** --initials **abc**
 4. Gaze upon the visually stunning UI
 5. Now look closer at the lightcurve/psd
 6. Pick a primary classification from the top row of options (labels start with P).
