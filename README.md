@@ -8,6 +8,8 @@ You can optionally add a note in case of lightcurve weirdness.
 
 You'll need to have the PDF's locally and convert them to png first, since I don't know how to make PyQT show pdf files. See below for what worked with Ubuntu.
 
+**If you have any questions or ideas to improving the UI, create an issue to let me know.**
+
 In the setup and usage instructions you'll need to replace boldface text with the bits that are appropriate for your system.
 
 Setup instructions
