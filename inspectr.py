@@ -240,6 +240,7 @@ if __name__ == "__main__":
             'TESS_LC_weirdness_sc': str,
             'Vetter_initials': str,
             }
+            
      
     df = pd.read_csv(args.target_list, converters=conv, delimiter=',')
     if len(df.keys()) == 1:
