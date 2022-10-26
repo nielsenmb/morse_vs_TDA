@@ -240,12 +240,10 @@ if __name__ == "__main__":
             'TESS_LC_weirdness_sc': str,
             'Vetter_initials': str,
             }
-    try:
-        df = pd.read_csv(args.target_list, converters=conv)
-    except:
+     
+    df = pd.read_csv(args.target_list, converters=conv, delimiter=',')
+    if len(df.keys()) == 1:
         df = pd.read_csv(args.target_list, converters=conv, delimiter=';')
-        print('Who uses semi-colon as a delimiter, this is madness!')
-        print('Output will be comma-separated.')
 
     if len(df) > 100:
         sys.setrecursionlimit(len(df))
