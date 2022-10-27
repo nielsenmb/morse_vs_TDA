@@ -6,7 +6,7 @@ Running inspectr.py will launch a UI that displays the images that were distribu
 
 You can optionally add a note in case of lightcurve weirdness. 
 
-You'll need to have the PDF's locally and convert them to png first, since I don't know how to make PyQT show pdf files. See below for what worked with Ubuntu.
+You'll need to have the PDF's locally and convert them to png first, since I don't know how to make PyQT show pdf files. See below for what worked with Ubuntu. 
 
 **If you have any questions or ideas to improving the UI, create an issue to let me know.**
 
