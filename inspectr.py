@@ -54,6 +54,11 @@ class MyCentralWidget(QWidget):
         keys = ['aperiodic', 'contact_rot', 'dsct_bcep', 'eclipse', 'gdor_spb', 'rrlyr_cepheid', 'solarlike', 'constant']
         for i, key in enumerate(keys):
             primary = QPushButton(f'P {key}', self)
+            if key == 'aperiodic':
+                primary.setShortcut('a')
+            if key == 'constant':
+                primary.setShortcut('c')
+
             primary.clicked.connect(lambda checked, x=key: self.write_primary(x))
             grbox.addWidget(primary, 0, i)
  
