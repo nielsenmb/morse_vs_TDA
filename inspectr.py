@@ -25,7 +25,10 @@ class MyMainWindow(QMainWindow):
         self.initUI()
 
     def initUI(self):
-        self.resize(1600, 900)
+        #self.resize(1600, 900)
+        self.setWidth(1600)
+        self.setHeight(900)
+
         self.move(50, 50)
         central_widget = MyCentralWidget(self, self.app, self.initials, self.cadence)
         self.setCentralWidget(central_widget)
